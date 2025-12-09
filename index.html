@@ -1,47 +1,32 @@
 <!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>FastFix IT Solutions – Pune</title>
-/* Services with thumbnails */
-.services-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 18px;
-  margin-top: 18px;
-}
-
-.service-card {
-  display: flex;
-  gap: 12px;
-  align-items: flex-start;
-  background: #fff;
-  border-radius: 10px;
-  padding: 12px;
-  border: 1px solid #e6edf3;
-  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
-}
-
-.service-img {
-  width: 92px;
-  height: 92px;
-  object-fit: cover;
-  border-radius: 8px;
-  flex-shrink: 0;
-  background: #f3f7fb;
-  padding: 6px;
-}
-
-.svg-img { background: white; padding: 8px; }
-
-/* smaller screens */
-@media (max-width: 700px) {
-  .service-card { flex-direction: row; gap: 10px; }
-  .service-img { width: 74px; height: 74px; }
-}
+<html lang="en"> : 
 </head>
+<!-- PUT THIS INSIDE <head> ... </head> -->
+<style>
+/* basic layout */
+body{font-family:Arial, sans-serif;margin:0;background:#f4f7fa;color:#0f172a}
+.container{max-width:900px;margin:0 auto;padding:20px}
 
+/* Services with thumbnails */
+.services-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+  gap:18px;margin-top:18px;
+}
+.service-card{
+  display:flex;gap:12px;align-items:flex-start;background:#fff;border-radius:10px;padding:12px;border:1px solid #e6edf3;
+  box-shadow:0 6px 18px rgba(2,6,23,0.04);
+}
+.service-img{width:92px;height:92px;object-fit:cover;border-radius:8px;flex-shrink:0;background:#f3f7fb;padding:6px}
+.svg-img{background:#fff;padding:8px}
+
+/* responsiveness */
+@media(max-width:700px){
+  .service-card{flex-direction:row}
+  .service-img{width:74px;height:74px}
+}
+</style>
+</head>
 <body>
 
 <header>
@@ -54,12 +39,13 @@
     <p>FastFix IT Solutions is a Pune-based service provider offering fast, reliable, and professional IT support.</p>
 <!-- START: Services (with images) -->
 <section id="services" class="container section">
+  <section id="services" class="container">
   <h3>Our Services</h3>
-  <p class="muted">Comprehensive IT services tailored to your needs — from small fixes to corporate solutions.</p>
+  <p>Comprehensive IT services tailored to your needs — from small fixes to corporate solutions.</p>
 
   <div class="services-grid">
     <article class="service-card">
-      <img src="A_flat_digital_graphic_design_showcases_branding_f.png" alt="Hardware Repair" class="service-img">
+      <img src="hardware.png" alt="Hardware Repair" class="service-img">
       <div class="service-body">
         <h4>Laptop / Desktop Repair</h4>
         <p>Hardware diagnostics, screen replacement, motherboard checks, and repairs for frequently crashing systems.</p>
@@ -67,7 +53,7 @@
     </article>
 
     <article class="service-card">
-      <img src="A_hero_section_digital_illustration_for_FastFix_IT.png" alt="Network Setup" class="service-img">
+      <img src="network.png" alt="Network Setup" class="service-img">
       <div class="service-body">
         <h4>Network Setup &amp; Troubleshooting</h4>
         <p>Wired/Wireless network design, band selection, router configuration, and internet speed optimization.</p>
@@ -75,7 +61,7 @@
     </article>
 
     <article class="service-card">
-      <img src="A_logo_for_a_company_named_&quot;FastFix_IT_Solutions&quot;_.png" alt="CCTV & Security" class="service-img">
+      <img src="cctv.png" alt="CCTV & Security" class="service-img">
       <div class="service-body">
         <h4>CCTV &amp; Security</h4>
         <p>CCTV camera installation, DVR/NVR setup, remote viewing, and security consultation.</p>
@@ -83,7 +69,7 @@
     </article>
 
     <article class="service-card">
-      <img src="fastfix_logo.svg" alt="WiFi Installation" class="service-img svg-img">
+      <img src="wifi.png" alt="WiFi Installation" class="service-img">
       <div class="service-body">
         <h4>Wi-Fi Installation &amp; Mesh</h4>
         <p>Home/office coverage planning, mesh system setup, and antenna placement advice.</p>
@@ -91,7 +77,7 @@
     </article>
 
     <article class="service-card">
-      <img src="A_flat_digital_graphic_design_showcases_branding_f.png" alt="Data Backup" class="service-img">
+      <img src="backup.png" alt="Data Backup" class="service-img">
       <div class="service-body">
         <h4>Data Backup &amp; Recovery</h4>
         <p>Data backup solutions, hard drive cloning, and lost data recovery services.</p>
@@ -99,13 +85,14 @@
     </article>
 
     <article class="service-card">
-      <img src="A_hero_section_digital_illustration_for_FastFix_IT.png" alt="On-site Support" class="service-img">
+      <img src="support.png" alt="On-site Support" class="service-img">
       <div class="service-body">
         <h4>On-Site &amp; Remote Support</h4>
         <p>Quick on-site service (Pune) and remote support sessions as needed.</p>
       </div>
     </article>
   </div>
+</section>
 </section>
 <!-- END: Services (with images) -->
 
