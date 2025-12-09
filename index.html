@@ -4,22 +4,42 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>FastFix IT Solutions – Pune</title>
+/* Services with thumbnails */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 18px;
+  margin-top: 18px;
+}
 
-<style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f4f7fa; }
+.service-card {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  background: #fff;
+  border-radius: 10px;
+  padding: 12px;
+  border: 1px solid #e6edf3;
+  box-shadow: 0 6px 18px rgba(2,6,23,0.04);
+}
 
-    header { background: #0e2a47; padding: 20px; color: white; text-align: center; }
+.service-img {
+  width: 92px;
+  height: 92px;
+  object-fit: cover;
+  border-radius: 8px;
+  flex-shrink: 0;
+  background: #f3f7fb;
+  padding: 6px;
+}
 
-    h1 { margin: 0; font-size: 28px; }
-    p { margin: 8px 0; }
+.svg-img { background: white; padding: 8px; }
 
-    .section { padding: 20px; max-width: 900px; margin: auto; }
-
-    .card { background: white; padding: 16px; border-radius: 8px; margin-top: 12px;
-            border: 1px solid #d9e2ec; }
-
-    footer { background: #0e2a47; padding: 20px; color: white; text-align: center; margin-top: 20px; }
-</style>
+/* smaller screens */
+@media (max-width: 700px) {
+  .service-card { flex-direction: row; gap: 10px; }
+  .service-img { width: 74px; height: 74px; }
+}
 </head>
 
 <body>
@@ -32,15 +52,62 @@
 <div class="section">
     <h2>About Us</h2>
     <p>FastFix IT Solutions is a Pune-based service provider offering fast, reliable, and professional IT support.</p>
+<!-- START: Services (with images) -->
+<section id="services" class="container section">
+  <h3>Our Services</h3>
+  <p class="muted">Comprehensive IT services tailored to your needs — from small fixes to corporate solutions.</p>
 
-    <h2>Services</h2>
+  <div class="services-grid">
+    <article class="service-card">
+      <img src="A_flat_digital_graphic_design_showcases_branding_f.png" alt="Hardware Repair" class="service-img">
+      <div class="service-body">
+        <h4>Laptop / Desktop Repair</h4>
+        <p>Hardware diagnostics, screen replacement, motherboard checks, and repairs for frequently crashing systems.</p>
+      </div>
+    </article>
 
-    <div class="card">Laptop / Desktop Repair</div>
-    <div class="card">Network Setup & Troubleshooting</div>
-    <div class="card">CCTV Installation & Support</div>
-    <div class="card">Wi-Fi & Mesh Installation</div>
-    <div class="card">Data Backup & Recovery</div>
-    <div class="card">On-site & Remote Support</div>
+    <article class="service-card">
+      <img src="A_hero_section_digital_illustration_for_FastFix_IT.png" alt="Network Setup" class="service-img">
+      <div class="service-body">
+        <h4>Network Setup &amp; Troubleshooting</h4>
+        <p>Wired/Wireless network design, band selection, router configuration, and internet speed optimization.</p>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <img src="A_logo_for_a_company_named_&quot;FastFix_IT_Solutions&quot;_.png" alt="CCTV & Security" class="service-img">
+      <div class="service-body">
+        <h4>CCTV &amp; Security</h4>
+        <p>CCTV camera installation, DVR/NVR setup, remote viewing, and security consultation.</p>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <img src="fastfix_logo.svg" alt="WiFi Installation" class="service-img svg-img">
+      <div class="service-body">
+        <h4>Wi-Fi Installation &amp; Mesh</h4>
+        <p>Home/office coverage planning, mesh system setup, and antenna placement advice.</p>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <img src="A_flat_digital_graphic_design_showcases_branding_f.png" alt="Data Backup" class="service-img">
+      <div class="service-body">
+        <h4>Data Backup &amp; Recovery</h4>
+        <p>Data backup solutions, hard drive cloning, and lost data recovery services.</p>
+      </div>
+    </article>
+
+    <article class="service-card">
+      <img src="A_hero_section_digital_illustration_for_FastFix_IT.png" alt="On-site Support" class="service-img">
+      <div class="service-body">
+        <h4>On-Site &amp; Remote Support</h4>
+        <p>Quick on-site service (Pune) and remote support sessions as needed.</p>
+      </div>
+    </article>
+  </div>
+</section>
+<!-- END: Services (with images) -->
 
     <h2>Contact</h2>
     <p><b>Email:</b> abhijeetkalkumbe5@gmail.com</p>
